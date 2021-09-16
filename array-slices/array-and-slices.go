@@ -34,4 +34,22 @@ func main() {
 	// provando a diferença entre slice e array
 	fmt.Println(reflect.TypeOf(slice))
 	fmt.Println(reflect.TypeOf(array3))
+
+	// Arrays Internos
+	slice3 := make([]float32, 10, 11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // lenght
+	fmt.Println(cap(slice3)) // capacidade
+
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 2) // quando estourado o valor maximo do slice ele duplica a capacidade
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+	slice4 := make([]int, 5)
+	fmt.Println(slice4)
+	slice4 = append(slice4, 10)
+	fmt.Println(len(slice4)) // lenght
+	fmt.Println(cap(slice4)) // capacidade
 }
