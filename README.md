@@ -1,0 +1,1 @@
+# Repository to learning GoLang in code examples =)
